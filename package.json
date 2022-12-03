@@ -2,9 +2,9 @@
   "name": "ts-training",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "lite-server"
   },
   "repository": {
     "type": "git",
@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/amiryxe/ts-training/issues"
   },
-  "homepage": "https://github.com/amiryxe/ts-training#readme"
+  "homepage": "https://github.com/amiryxe/ts-training#readme",
+  "dependencies": {
+    "lite-server": "^2.6.1"
+  }
 }
