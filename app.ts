@@ -1,3 +1,7 @@
+// define types and set aliases
+type InputTypes = number | string
+type ResultTypes = 'is-number' | 'is-text'
+
 // types for function parameters
 function add(num1: number, num2: number) {
     return num1 + num2
@@ -30,13 +34,16 @@ arr2.push(12)
 arr2.push('test')
 
 // union types
-function add2(input1: number | string, input2: number | string) {
-    if (typeof input1 === 'number' && typeof input2 === 'number') {
-        return input1 + input2
+function add2(input1: InputTypes, input2: InputTypes, resultType: ResultTypes) {
+    if (
+        (typeof input1 === 'number' && typeof input2 === 'number') ||
+        resultType === 'is-number'
+    ) {
+        return +input1 + +input2
     }
 
     return '' + input1 + input2
 }
 
-console.log(add2(12, 14))
-console.log(add2('a', 'b'))
+console.log(add2(12, 14, 'is-number'))
+console.log(add2('a', 'b', 'is-text'))
