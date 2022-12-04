@@ -55,3 +55,13 @@ function add3(num1: number, num2: number, cb: (a: number | string) => void): num
 }
 
 console.log(add3(5, 3, result => console.log(result)))
+
+// unknown type
+let val: unknown
+let str: string = 'test'
+val = 12
+val = 'text'
+
+if (typeof val === 'string') {
+    val = str
+}

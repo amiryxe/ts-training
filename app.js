@@ -35,3 +35,11 @@ function add3(num1, num2, cb) {
     return num1 + num2;
 }
 console.log(add3(5, 3, function (result) { return console.log(result); }));
+// unknown type
+var val;
+var str = 'test';
+val = 12;
+val = 'text';
+if (typeof val === 'string') {
+    val = str;
+}
