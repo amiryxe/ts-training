@@ -29,3 +29,9 @@ function add2(input1, input2, resultType) {
 }
 console.log(add2(12, 14, 'is-number'));
 console.log(add2('a', 'b', 'is-text'));
+// callback type
+function add3(num1, num2, cb) {
+    cb('Total of your numbers is ' + (num1 + num2));
+    return num1 + num2;
+}
+console.log(add3(5, 3, function (result) { return console.log(result); }));

@@ -47,3 +47,11 @@ function add2(input1: InputTypes, input2: InputTypes, resultType: ResultTypes) {
 
 console.log(add2(12, 14, 'is-number'))
 console.log(add2('a', 'b', 'is-text'))
+
+// callback type
+function add3(num1: number, num2: number, cb: (a: number | string) => void): number {
+    cb('Total of your numbers is ' + (num1 + num2))
+    return num1 + num2
+}
+
+console.log(add3(5, 3, result => console.log(result)))
