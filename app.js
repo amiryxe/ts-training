@@ -20,11 +20,12 @@ arr2.push(true);
 arr2.push(12);
 arr2.push('test');
 // union types
-function add2(input1, input2) {
-    if (typeof input1 === 'number' && typeof input2 === 'number') {
-        return input1 + input2;
+function add2(input1, input2, resultType) {
+    if ((typeof input1 === 'number' && typeof input2 === 'number') ||
+        resultType === 'is-number') {
+        return +input1 + +input2;
     }
     return '' + input1 + input2;
 }
-console.log(add2(12, 14));
-console.log(add2('a', 'b'));
+console.log(add2(12, 14, 'is-number'));
+console.log(add2('a', 'b', 'is-text'));
