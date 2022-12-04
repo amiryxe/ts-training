@@ -17,3 +17,15 @@ const myObject: {
 }
 
 console.log(myObject.title)
+
+// type of values in array
+const arr: string[] = []
+arr.push('test')
+// arr.push(12) wrong value
+
+// any can hold any types of values
+const arr2: any[] = []
+arr2.push(true)
+arr2.push(12)
+arr2.push('test')
+
