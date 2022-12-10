@@ -83,3 +83,9 @@ class Team {
         console.log(this.members.length, this.members)
     }
 }
+
+const newTeam = new Team('Sport')
+
+newTeam.addMember('John')
+newTeam.addMember('Sara')
+newTeam.getMembers()

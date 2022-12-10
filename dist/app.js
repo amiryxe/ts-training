@@ -44,3 +44,20 @@ val = 'text';
 if (typeof val === 'string') {
     val = str;
 }
+// class 
+class Team {
+    constructor(n) {
+        this.members = [];
+        this.name = n;
+    }
+    addMember(member) {
+        this.members.push(member);
+    }
+    getMembers() {
+        console.log(this.members.length, this.members);
+    }
+}
+const newTeam = new Team('Sport');
+newTeam.addMember('John');
+newTeam.addMember('Sara');
+newTeam.getMembers();
