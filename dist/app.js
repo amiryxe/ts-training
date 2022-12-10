@@ -61,3 +61,17 @@ const newTeam = new Team('Sport');
 newTeam.addMember('John');
 newTeam.addMember('Sara');
 newTeam.getMembers();
+class Team2 {
+    constructor(id, name) {
+        this.id = id;
+        this.name = name;
+    }
+}
+// inheritance
+class DevTeam extends Team2 {
+    constructor(id) {
+        super(id, 'Test');
+    }
+}
+const devTeam1 = new DevTeam(5);
+console.log(devTeam1);

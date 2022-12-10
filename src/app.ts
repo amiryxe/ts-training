@@ -89,3 +89,18 @@ const newTeam = new Team('Sport')
 newTeam.addMember('John')
 newTeam.addMember('Sara')
 newTeam.getMembers()
+
+class Team2 {
+    constructor(private id: number, public name: string) {
+    }
+}
+
+// inheritance
+class DevTeam extends Team2 {
+    constructor(id: number) {
+        super(id, 'Test')
+    }
+}
+
+const devTeam1 = new DevTeam(5)
+console.log(devTeam1)
