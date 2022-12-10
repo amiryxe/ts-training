@@ -69,7 +69,7 @@ if (typeof val === 'string') {
 // class 
 class Team {
     public name: string
-    private members: strings[] = []
+    private members: string[] = []
 
     constructor(n: string) {
         this.name = n
