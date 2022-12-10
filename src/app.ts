@@ -65,3 +65,21 @@ val = 'text'
 if (typeof val === 'string') {
     val = str
 }
+
+// class 
+class Team {
+    public name: string
+    private members: strings[] = []
+
+    constructor(n: string) {
+        this.name = n
+    }
+
+    addMember(member: string) {
+        this.members.push(member)
+    }
+
+    getMembers() {
+        console.log(this.members.length, this.members)
+    }
+}
