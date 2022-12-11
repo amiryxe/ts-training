@@ -158,4 +158,19 @@ class Test2 {
     }
 }
 
-console.log(Test2.createName('David'));
+console.log(Test2.createName('David'))
+
+// Abstract
+abstract class Test3 {
+    abstract name: string
+
+    abstract nameGenerator(): void
+}
+
+class ChildTest2 extends Test3 {
+    name: string = 'Jack'
+
+    nameGenerator() {
+        return 'Name is ' + this.name
+    }
+}

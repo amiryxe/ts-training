@@ -114,3 +114,15 @@ class Test2 {
     }
 }
 console.log(Test2.createName('David'));
+// Abstract
+class Test3 {
+}
+class ChildTest2 extends Test3 {
+    constructor() {
+        super(...arguments);
+        this.name = 'Jack';
+    }
+    nameGenerator() {
+        return 'Name is ' + this.name;
+    }
+}
