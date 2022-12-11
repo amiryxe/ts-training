@@ -107,3 +107,10 @@ console.log(obj1.firstName);
 console.log(obj1.sayInfo);
 obj1.setStatus = false;
 console.log(obj1.sayInfo);
+// Static methods
+class Test2 {
+    static createName(name) {
+        return 'Name: ' + name;
+    }
+}
+console.log(Test2.createName('David'));
