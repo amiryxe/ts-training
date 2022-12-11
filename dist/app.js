@@ -126,3 +126,12 @@ class ChildTest2 extends Test3 {
         return 'Name is ' + this.name;
     }
 }
+// Private constructor
+class Test4 {
+    constructor(val) {
+        console.log('Value is ', val);
+    }
+    static getInstance() {
+        // ...
+    }
+}
