@@ -141,3 +141,12 @@ prd1 = {
     price: 100,
     prdInfo: (val) => val
 };
+class Role {
+    constructor() {
+        this.name = '';
+        this.role = 'Admin';
+    }
+    info() {
+        return 'Your name is ' + this.name + ' and your role is ' + this.role;
+    }
+}

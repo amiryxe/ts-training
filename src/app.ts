@@ -201,3 +201,18 @@ prd1 = {
     price: 100,
     prdInfo: (val) => val
 }
+
+// Interface in classes
+interface User {
+    name: string
+    info(text: string): void
+}
+
+class Role implements User {
+    name: string = ''
+    role: string = 'Admin'
+
+    info() {
+        return 'Your name is ' + this.name + ' and your role is ' + this.role
+    }
+}
