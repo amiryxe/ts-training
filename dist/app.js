@@ -135,3 +135,9 @@ class Test4 {
         // ...
     }
 }
+let prd1;
+prd1 = {
+    name: 'Book',
+    price: 100,
+    prdInfo: (val) => val
+};

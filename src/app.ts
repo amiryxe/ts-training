@@ -185,3 +185,19 @@ class Test4 {
         // ...
     }
 }
+
+// Interface
+interface Product {
+    name: string
+    price: number
+
+    prdInfo(describe: string): void
+}
+
+let prd1: Product
+
+prd1 = {
+    name: 'Book',
+    price: 100,
+    prdInfo: (val) => val
+}
