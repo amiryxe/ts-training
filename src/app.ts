@@ -104,3 +104,49 @@ class DevTeam extends Team2 {
 
 const devTeam1 = new DevTeam(5)
 console.log(devTeam1)
+
+// protected
+class Parent {
+    private fullName: string
+    public firstName: string
+    public lastName: string
+    protected status: boolean
+
+    constructor(fname: string, lname: string) {
+        this.firstName = fname
+        this.lastName = lname
+        this.fullName = fname + ' ' + lname
+        this.status = true
+    }
+
+    get getFullName() {
+        return this.fullName
+    }
+}
+
+class Child1 extends Parent {
+    constructor(txt1: string, txt2: string) {
+        super(txt1, txt2)
+    }
+
+    get sayInfo() {
+        if (this.status) {
+            return 'Your full name is ' + this.getFullName
+        }
+
+        return 'Disable Person: ' + this.getFullName
+    }
+
+    set setStatus(status: boolean) {
+        this.status = status
+    }
+}
+
+const obj1 = new Child1('Brad', 'Goodman')
+// console.log(obj1.status) // Wrong access because status is a protected
+
+console.log(obj1.firstName);
+console.log(obj1.sayInfo);
+obj1.setStatus = false
+
+console.log(obj1.sayInfo);
