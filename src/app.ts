@@ -216,3 +216,15 @@ class Role implements User {
         return 'Your name is ' + this.name + ' and your role is ' + this.role
     }
 }
+
+// Decorators
+function Logger(target: Function) {
+    console.log('Logger')
+}
+
+@Logger
+class Test5 {
+    constructor() {
+        console.log('anything')
+    }
+}
