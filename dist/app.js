@@ -168,3 +168,10 @@ let Test5 = class Test5 {
 Test5 = __decorate([
     Logger
 ], Test5);
+/*
+    The type is not explicitly defined for this variable,
+    but the initial value of its number causes it to take a numeric type,
+    and after that it receives nothing but a number:
+*/
+let num = 14;
+// num = 'test'  // ERROR
