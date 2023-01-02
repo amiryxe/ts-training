@@ -245,3 +245,21 @@ const obj2: {
     name: 'amir',
     age: 20
 }
+
+// Enum
+enum TestEnum {
+    ADMIN,
+    USER,
+    GUEST
+}
+
+console.log(TestEnum.ADMIN)
+
+// Enum with values
+enum TestEnum2 {
+    RED = 'RED',
+    GREEN = 'GREEN',
+    BLUE = 'BLUE',
+}
+
+console.log(TestEnum2.GREEN)

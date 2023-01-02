@@ -179,3 +179,19 @@ const obj2 = {
     name: 'amir',
     age: 20
 };
+// Enum
+var TestEnum;
+(function (TestEnum) {
+    TestEnum[TestEnum["ADMIN"] = 0] = "ADMIN";
+    TestEnum[TestEnum["USER"] = 1] = "USER";
+    TestEnum[TestEnum["GUEST"] = 2] = "GUEST";
+})(TestEnum || (TestEnum = {}));
+console.log(TestEnum.ADMIN);
+// Enum with values
+var TestEnum2;
+(function (TestEnum2) {
+    TestEnum2["RED"] = "RED";
+    TestEnum2["GREEN"] = "GREEN";
+    TestEnum2["BLUE"] = "BLUE";
+})(TestEnum2 || (TestEnum2 = {}));
+console.log(TestEnum2.GREEN);
