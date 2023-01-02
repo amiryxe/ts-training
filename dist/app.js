@@ -175,3 +175,7 @@ Test5 = __decorate([
 */
 let num = 14;
 // num = 'test'  // ERROR
+const obj2 = {
+    name: 'amir',
+    age: 20
+};

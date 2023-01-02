@@ -236,3 +236,12 @@ class Test5 {
 */
 let num = 14
 // num = 'test'  // ERROR
+
+
+const obj2: {
+    name: string
+    age: 20 // just accept number 20
+} = {
+    name: 'amir',
+    age: 20
+}
