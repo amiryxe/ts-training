@@ -195,3 +195,16 @@ var TestEnum2;
     TestEnum2["BLUE"] = "BLUE";
 })(TestEnum2 || (TestEnum2 = {}));
 console.log(TestEnum2.GREEN);
+class Department {
+    constructor(n) {
+        this.name = n;
+    }
+    sayMyName() {
+        return 'Your name is ' + this.name;
+    }
+}
+const dp1 = new Department('Jack');
+console.log(dp1.sayMyName());
+const dp2 = new Department('Jimmy');
+const dpObj = { name: 'anything', sayMyName: dp2.sayMyName }; // about 'this' problem
+console.log(dpObj.sayMyName());

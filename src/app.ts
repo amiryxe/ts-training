@@ -263,3 +263,23 @@ enum TestEnum2 {
 }
 
 console.log(TestEnum2.GREEN)
+
+class Department {
+    name: string
+
+    constructor(n: string) {
+        this.name = n
+    }
+
+    sayMyName(this: Department) { // pass this to method
+        return 'Your name is ' + this.name
+    }
+}
+
+const dp1 = new Department('Jack')
+console.log(dp1.sayMyName())
+
+const dp2 = new Department('Jimmy')
+
+const dpObj = { name: 'anything', sayMyName: dp2.sayMyName } // about 'this' problem
+console.log(dpObj.sayMyName())
