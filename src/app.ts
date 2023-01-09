@@ -287,14 +287,20 @@ console.log(dpObj.sayMyName())
 
 // summary class 
 class Test6 {
-    private id: string
-    private name: string
-    private age: number
+    // private id: string
+    // private name: string
+    // private age: number
 
-    constructor(inputID: string, inputName: string, inputAge: number) {
-        this.id = inputID
-        this.name = inputName
-        this.age = inputAge
+    // constructor(inputID: string, inputName: string, inputAge: number) {
+    //     this.id = inputID
+    //     this.name = inputName
+    //     this.age = inputAge
+    // }
+
+    // The above codes can be summarized as follows:
+
+    constructor(private id: string, private name: string, private age: number) {
+        // don't need to set values it set automatically
     }
 
     getData() {

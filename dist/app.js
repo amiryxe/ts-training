@@ -210,10 +210,20 @@ const dpObj = { name: 'anything', sayMyName: dp2.sayMyName }; // about 'this' pr
 console.log(dpObj.sayMyName());
 // summary class 
 class Test6 {
-    constructor(inputID, inputName, inputAge) {
-        this.id = inputID;
-        this.name = inputName;
-        this.age = inputAge;
+    // private id: string
+    // private name: string
+    // private age: number
+    // constructor(inputID: string, inputName: string, inputAge: number) {
+    //     this.id = inputID
+    //     this.name = inputName
+    //     this.age = inputAge
+    // }
+    // The above codes can be summarized as follows:
+    constructor(id, name, age) {
+        this.id = id;
+        this.name = name;
+        this.age = age;
+        // don't need to set values it set automatically
     }
     getData() {
         return {
