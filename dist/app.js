@@ -208,3 +208,20 @@ console.log(dp1.sayMyName());
 const dp2 = new Department('Jimmy');
 const dpObj = { name: 'anything', sayMyName: dp2.sayMyName }; // about 'this' problem
 console.log(dpObj.sayMyName());
+// summary class 
+class Test6 {
+    constructor(inputID, inputName, inputAge) {
+        this.id = inputID;
+        this.name = inputName;
+        this.age = inputAge;
+    }
+    getData() {
+        return {
+            id: this.id,
+            name: this.name,
+            age: this.age
+        };
+    }
+}
+const t6 = new Test6('one', 'sample name', 29);
+console.log(t6.getData());
