@@ -233,5 +233,5 @@ class Test6 {
         };
     }
 }
-const t6 = new Test6('one', 'sample name', 29);
+const t6 = new Test6('1-00-3', 'sample name', 29);
 console.log(t6.getData());
