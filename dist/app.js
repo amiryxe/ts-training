@@ -240,3 +240,21 @@ class Child extends Test6 {
 }
 const ch1 = new Child('1-44', 'test', 25);
 console.log(ch1.getData());
+// use super in classes
+class ParentTest1 {
+    constructor(id, name) {
+        this.id = id;
+        this.name = name;
+    }
+}
+class ChildTest1 extends ParentTest1 {
+    constructor(type) {
+        super(1, 'Micky');
+        this.type = type;
+    }
+    say() {
+        return 'Your name is ' + this.name + ' and your type is ' + this.type;
+    }
+}
+const chTest1 = new ChildTest1('Admin');
+console.log(chTest1.say());
