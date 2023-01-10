@@ -314,3 +314,11 @@ class Test6 {
 
 const t6 = new Test6('1-00-3', 'sample name', 29)
 console.log(t6.getData())
+
+// inheritance
+class Child extends Test6 {
+    // no constructor
+}
+
+const ch1 = new Child('1-44', 'test', 25)
+console.log(ch1.getData())
