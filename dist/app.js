@@ -258,3 +258,6 @@ class ChildTest1 extends ParentTest1 {
 }
 const chTest1 = new ChildTest1('Admin');
 console.log(chTest1.say());
+// Readonly tuple
+const myTuple = [5, 'test'];
+// myTuple.push(5) --> error because it's readonly
