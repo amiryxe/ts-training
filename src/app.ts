@@ -345,4 +345,9 @@ console.log(chTest1.say())
 
 // Readonly tuple
 const myTuple: readonly [number, string] = [5, 'test']
-// myTuple.push(5) --> error because it's readonly
+/* myTuple.push(5) --> error because it's readonly */
+
+// Index Signatures
+const testObj: { [index: string]: number } = {};
+testObj.firstName = 25
+testObj[3] = 4
